@@ -1,0 +1,42 @@
+<head>
+    <script>
+        function validate(age){
+            var ans="not eigible";
+            if(age>=18){
+                ans="eligible";
+            }
+            document.write("You are <b>"+ans+"</b> for admission");
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var age=parseInt(prompt("Enter age"));
+        validate(age);
+    </script>
+</body>
+</html>
+// student detail using this keyword
+ <script>
+       function Student(n, a, m,p) {
+  var name = n;
+  var age = a;
+  var marks = m;
+  var phone=p;
+  
+  var averageMarks = function() {
+    var sum = 0;
+    marks.forEach(function(m){
+      sum += m;
+    });
+    return sum/marks.length;    
+  }
+  this.printDetails = function() {
+    console.log('Name: ' + name + ' Age: ' + age + ' Average Marks: ' + averageMarks()+' phone numebr: '+phone);
+  }
+}
+
+var student1 = new Student('sanskar', 21, [70, 92, 84],'7752908763');
+student1.printDetails();
+
+    </script>
